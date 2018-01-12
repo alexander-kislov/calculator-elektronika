@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alexander Kislov">
+    <meta name="copyright" content="Alexander Kislov">
+    <meta name="description" content="Calculator Elektronika">
+    <meta name="keywords" content="Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Calculator Elektronika</title>
+    <link rel="shortcut icon" href="img/calculator.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+    <div class="contacts"><a href="https://github.com/Farengeyt451" target="_blank">
+        <div class="icon icon-github"></div></a><a href="https://alexander-kislov.github.io/" target="_blank">
+        <div class="icon icon-portfolio"></div></a></div>
+    <div class="calc-wrapper">
+      <div class="calc-top"></div>
+      <div class="calc-bottom">
+        <div class="calc-display">
+          <input id="output" type="text" value="0" disabled>
+          <p>00000000000000</p>
+        </div>
+        <div class="calc-brand">
+          <div class="on-off-button"><span class="checkbox">
+              <input id="onOff" type="checkbox">
+              <label></label></span></div>
+          <div class="brand">
+            <p>Электроника</p>
+          </div>
+        </div>
+        <div class="calc-buttons">
+          <div class="row">
+            <button class="yellow" id="clear" name="c">С</button>
+            <button class="yellow" id="clean-mem" name="cm">СП</button>
+            <button class="blue" id="use-mem" name="m">ИП</button>
+            <button class="operation blue" name="division" value="/">÷</button>
+          </div>
+          <div class="row">
+            <button class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="operation blue" name="multiplication" value="*">×</button>
+          </div>
+          <div class="row">
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="operation blue" name="subtraction" value="-">−</button>
+          </div>
+          <div class="row">
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="operation blue" name="addition" value="+">+</button>
+          </div>
+          <div class="row">
+            <button class="number" value="0">0</button>
+            <button id="decimal" name="dot">.</button>
+            <button class="blue" id="value-mem" name="m+">П+</button>
+            <button class="operation blue" name="equality" value="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
